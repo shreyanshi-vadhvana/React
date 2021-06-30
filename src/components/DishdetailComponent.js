@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem, CardBody, CardText } from "reactstrap";
+import { Card, CardImg, CardTitle, Breadcrumb, BreadcrumbItem, CardBody, CardText } from "reactstrap";
 import { Link } from 'react-router-dom';
 import { Button, Modal, ModalBody, ModalHeader, Label, Row, Col } from "reactstrap";
 import { Control, LocalForm, Errors } from 'react-redux-form';
@@ -93,8 +93,7 @@ class CommentForm extends Component {
                                         className="form-control"
                                         validators={{
                                             required, minLength: minLength(3), maxLength: maxLength(15)
-                                        }}
-                                    />
+                                        }} />
                                     <Errors
                                         className="text-danger"
                                         model=".author"
@@ -120,8 +119,7 @@ class CommentForm extends Component {
                                         className="form-control"
                                         validators={{
                                             required
-                                        }}
-                                    />
+                                        }} />
                                     <Errors
                                         className="text-danger"
                                         model=".author"
